@@ -1,5 +1,5 @@
 # RAG-Based-LLM-Application
-A Retrieval-Augmented Generation (RAG) application that enhances LLM responses with external knowledge retrieval. Features efficient document indexing, vector search, and seamless integration with llama 3.2 for accurate and context-aware answers. nference, vector database storage, and intelligent ranking to improve response accuracy and relevance.
+A Retrieval-Augmented Generation (RAG) application that enhances LLM responses with external knowledge retrieval. Features efficient document indexing, vector search, and seamless integration with llama 3.2 for accurate and context-aware answers. Inference, vector database storage, and intelligent ranking to improve response accuracy and relevance.
 
 # Project Dependencies
 This project utilizes various libraries for essential functionalities. Below is a description of each dependency and its purpose:
