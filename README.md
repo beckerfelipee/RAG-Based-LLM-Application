@@ -35,7 +35,7 @@ A collection of LangChain utilities that facilitate integration with LLMs and ve
 Used for specific components within the project's workflow.
 
 ## Installing Dependencies
-To install all required libraries, run:
+To install all required libraries, run: 
 
 ```bash
 pip install -r requirements.txt
