@@ -1,46 +1,67 @@
-# RAG-Based-LLM-Application
-A Retrieval-Augmented Generation (RAG) application that enhances LLM responses with external knowledge retrieval. Features efficient document indexing, vector search, and seamless integration with llama 3.2 for accurate and context-aware answers. Inference, vector database storage, and intelligent ranking to improve response accuracy and relevance.
+# RAG-Based LLM Application
 
-# Project Dependencies
-This project utilizes various libraries for essential functionalities. Below is a description of each dependency and its purpose:
+A Retrieval-Augmented Generation (RAG) application that enhances Large Language Model (LLM) responses by incorporating external knowledge sources. This system combines efficient document indexing, semantic vector search, re-ranking of retrieved results, and a user-friendly interface to provide accurate and context-aware answers.
 
-### 1. Ollama – Local Inference
-Used for running AI model inference locally without relying on cloud services.
+Built with **LLaMA 3.2**, this application runs fully locally, leveraging modern tools such as Ollama, ChromaDB, and SentenceTransformers.
 
-Enables efficient execution of language models directly on the user's machine.
+---
 
-### 2. ChromaDB – Vector Database
-A vector database for storing and retrieving embeddings efficiently.
+## ⚙️ Prerequisites
 
-Essential for semantic search and similarity-based information retrieval.
+Before running the application, ensure the following models are downloaded:
 
-### 3. Sentence-Transformers – Re-Ranking
-Used to reorder the results retrieved from the vector database.
+### 🔸 Ollama Models
+Used for local inference and text embedding:
 
-Improves response accuracy by ranking the most relevant results higher.
+```bash
+ollama pull nomic-embed-text
+ollama pull llama3.2:3b
+```
 
-### 4. Streamlit – User Interface (UI)
-A framework for building interactive and user-friendly interfaces for Python applications.
+- `nomic-embed-text` – used for generating semantic embeddings.
+- `llama3.2:3b` – the primary LLM used for generating answers.
 
-Simplifies data visualization and interaction with the AI model.
+### 🔸 Re-Ranking Model
+The re-ranking step uses the SentenceTransformer model `ms-marco-MiniLM-L6-v2`. You need to download it manually.
 
-### 5. PyMuPDF – PDF Processing
-A library for handling and extracting text from PDF files.
+---
 
-Used for document preprocessing and data ingestion.
+## 📦 Project Dependencies
 
-### 6. Langchain-Community – Auxiliary Tools
-A collection of LangChain utilities that facilitate integration with LLMs and vector databases.
+This project uses several key libraries:
 
-Used for specific components within the project's workflow.
+### 1. **Ollama** – Local Inference  
+Runs LLMs locally, removing the need for cloud-based APIs.
 
-## Installing Dependencies
-To install all required libraries, run: 
+### 2. **ChromaDB** – Vector Database  
+Stores and retrieves embeddings for semantic document search.
+
+### 3. **SentenceTransformers** – Re-Ranking  
+Reorders vector search results based on contextual relevance.
+
+### 4. **Streamlit** – User Interface  
+Provides a simple and interactive UI for interacting with the LLM.
+
+### 5. **PyMuPDF** – PDF Processing  
+Extracts text from PDF files for ingestion and indexing.
+
+### 6. **Langchain-Community** – Utilities & Integration  
+Supports integration with LLMs and retrieval pipelines.
+
+---
+
+## 🚀 Installing Dependencies
+
+Install all required libraries with:
 
 ```bash
 pip install -r requirements.txt
 ```
+
 Or install them individually:
+
 ```bash
 pip install ollama chromadb sentence-transformers streamlit pymupdf langchain-community
 ```
+
+---
