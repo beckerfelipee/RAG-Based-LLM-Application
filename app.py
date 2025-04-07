@@ -42,7 +42,7 @@ VECTOR_DB_PATH = "./data-rag-chroma"
 # ----- LLM usage ----- #
 
 SYSTEM_PROMPT = """
-You are a Capgemini AI assistant that answers **strictly based on the provided context**. Your goal is to analyze the context and generate responses **only from its content**.  
+You are a AI assistant that answers **strictly based on the provided context**. Your goal is to analyze the context and generate responses **only from its content**.  
 
 ##  **Answering Rules:**  
 1. **Only use the given context—no external knowledge or assumptions.**  
