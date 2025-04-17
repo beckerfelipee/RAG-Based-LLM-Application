@@ -1,4 +1,4 @@
-# RAG-Based LLM Application 
+# RAG-Based LLM Application
 
 A Retrieval-Augmented Generation (RAG) application that enhances Large Language Model (LLM) responses by incorporating external knowledge sources. This system combines efficient document indexing, semantic vector search, re-ranking of retrieved results, and a user-friendly interface to provide accurate and context-aware answers.
 
